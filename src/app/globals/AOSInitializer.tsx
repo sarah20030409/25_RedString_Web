@@ -9,7 +9,7 @@ import "aos/dist/aos.css";
 export default function AOSInitializer() {
   react.useEffect(() => {
     AOS.init({
-      duration: 2000,
+      duration: 1500,
     });
   }, []);
 

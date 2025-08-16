@@ -17,7 +17,11 @@ export default function Header() {
       <div className="bg-white_gradient pt-8 max-md:pt-4 max-md:bg-white_gradient_M">
         <div className="flex justify-center pb-7 max-md:pb-3 max-md:scale-95">
           <Link href={"/"}>
-            <img src="/favicon.ico" alt="赤弦獎_吾聲" width={"77px"} />
+            <img
+              className="w-16 max-md:w-14"
+              src="/favicon.ico"
+              alt="赤弦獎_吾聲"
+            />
           </Link>
         </div>
         <div className="pb-[10%] max-md:pb-[5%]">
