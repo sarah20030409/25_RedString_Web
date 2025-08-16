@@ -1,5 +1,5 @@
 export default function Footer() {
-  const iconStyle = "w-12 mx-2  hover:scale-110";
+  const iconStyle = "w-12 mx-2  hover:scale-110 max-md:w-10 max-md:mx-1";
 
   return (
     <div>
