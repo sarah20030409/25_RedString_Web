@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Header from "./globals/header";
 import Footer from "./globals/footer";
+import TopButton from "./globals/topButton";
 import "./style/reset.css";
 import "./style/globals.css";
 import AOSInitializer from "./globals/AOSInitializer";
@@ -47,10 +48,11 @@ export default function RootLayout({
         style={{ backgroundImage: `url('/background.webp')` }}
       >
         <AOSInitializer />
-        <div className="fixed top-0 left-0 w-full ">
+        <div>
           <Header />
         </div>
-        <div className="pt-60 max-m_md:pt-52 max-md:pt-44">{children}</div>
+        <div className="mb-10 -mt-10 max-md:-mt-1">{children}</div>
+        <TopButton />
         <Footer />
       </body>
     </html>

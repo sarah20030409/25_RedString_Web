@@ -29,6 +29,7 @@ module.exports = {
           "linear-gradient(to bottom, #FFFFFF 60%, transparent 85%)",
         white_gradient_M:
           "linear-gradient(to bottom, #FFFFFF 90%, transparent 100%)",
+        red_brown_gradient: "linear-gradient(to bottom, #400306, #231815)",
       },
       fontFamily: {
         Serif: ['"Noto Serif TC"', "serif"],
