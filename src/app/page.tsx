@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 // pages/index.tsx
 export default function Home() {
   return (

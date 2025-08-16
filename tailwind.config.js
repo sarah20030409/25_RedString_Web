@@ -16,22 +16,27 @@ module.exports = {
         Cus_Brown: "#400306",
         Cus_White: "#FFFFFF",
         Cus_Deep_Brown: "#231815",
+        Cus_Blue: "#00B9E6",
 
         Cus_gold_light: "#D0AF79",
         Cus_gold: "#E1A23B",
         Cus_gold_dark: "#B28946",
       },
       backgroundImage: {
-        //=====gradient color (for text)=====
+        //=====gradient color =====
         gold_gradient: "linear-gradient(to bottom, #E1A23B, #B28946)",
+        white_gradient:
+          "linear-gradient(to bottom, #FFFFFF 60%, transparent 85%)",
+        white_gradient_M:
+          "linear-gradient(to bottom, #FFFFFF 90%, transparent 100%)",
       },
       fontFamily: {
         Serif: ['"Noto Serif TC"', "serif"],
       },
       screens: {
         sm: "420px",
-        md: "740px",
-        m_md: "1024px",
+        md: "740px", // phone
+        m_md: "1024px", // tablet
         lg: "1250px",
       },
     },

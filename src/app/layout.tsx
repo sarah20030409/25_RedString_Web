@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
+import Header from "./globals/header";
+import Footer from "./globals/footer";
 import "./style/reset.css";
 import "./style/globals.css";
+import AOSInitializer from "./globals/AOSInitializer";
 
 export const metadata: Metadata = {
   title: "第二十五屆紅樓赤弦獎-吾聲",
@@ -43,11 +46,12 @@ export default function RootLayout({
         className="bg-center bg-repeat bg-[length:800px]"
         style={{ backgroundImage: `url('/background.webp')` }}
       >
-        <p className="bg-gold_gradient bg-clip-text text-transparent ">
-          header 第貳拾伍屆紅樓琴緣民歌比賽
-        </p>
-        {children}
-        <p className="medium_text">footer 標題字</p>
+        <AOSInitializer />
+        <div className="fixed top-0 left-0 w-full ">
+          <Header />
+        </div>
+        <div className="pt-60 max-m_md:pt-52 max-md:pt-44">{children}</div>
+        <Footer />
       </body>
     </html>
   );
