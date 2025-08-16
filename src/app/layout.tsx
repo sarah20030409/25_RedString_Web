@@ -42,7 +42,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head></head>
+      <head>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&display=swap"
+          rel="stylesheet"
+        />
+      </head>
       <body
         className="bg-center bg-repeat bg-[length:800px]"
         style={{ backgroundImage: `url('/background.webp')` }}

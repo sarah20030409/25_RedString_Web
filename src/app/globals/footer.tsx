@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <div>
       <div className="bg-red_brown_gradient">
-        <div className="base_text leading-loose text-white px-[10%] py-[3%] max-md:py-[8%]">
+        <div className="base_text no-underline leading-loose text-white px-[10%] py-[3%] max-md:py-[8%]">
           <p>
             <b>總召</b> | 黃聖翔 0975-535-106
           </p>
