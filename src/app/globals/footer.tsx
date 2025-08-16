@@ -1,27 +1,27 @@
 export default function Footer() {
-  const iconStyle = "w-12 mx-2 hover:scale-110";
+  const iconStyle = "w-12 mx-2  hover:scale-110";
 
   return (
     <div>
       <div className="bg-red_brown_gradient">
-        <div className="base_text no-underline leading-loose text-white px-[10%] py-[3%] max-md:py-[8%]">
-          <p>
+        <div className="base_text leading-loose text-white px-[10%] py-[3%] max-md:py-[8%]">
+          <p className="no-underline">
             <b>總召</b> | 黃聖翔 0975-535-106
           </p>
-          <p>
+          <p className="no-underline">
             <b>副召</b> | 陳虹華 0966-390-513
           </p>
           <div className="py-[1%] max-m_md:py-[3%]">
-            <p>
+            <p className="no-underline">
               <b>公關</b> | 曾怡瑄 0909-869-869
             </p>
-            <p>
+            <p className="no-underline">
               <b>公關</b> | 王翊瑄 0906-360-610
             </p>
           </div>
           <div className="flex justify-between items-end max-md:block">
             <div>
-              <p>
+              <p className="no-underline">
                 <b>赤弦獎官方Gmail</b> | ntutredstring@gmail.com
               </p>
             </div>
