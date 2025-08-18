@@ -15,10 +15,10 @@ export default function Header() {
   return (
     <div>
       <div className="bg-white_gradient pt-8 max-md:pt-4 max-md:bg-white_gradient_M">
-        <div className="flex justify-center pb-7 max-md:pb-3 max-md:scale-95">
+        <div className=" flex justify-center pb-7 max-md:pb-3 max-md:scale-95">
           <Link href={"/"}>
             <img
-              className="w-16 max-md:w-14"
+              className="mouse_interactive w-16 max-md:w-14"
               src="/favicon.ico"
               alt="赤弦獎_吾聲"
             />
@@ -60,7 +60,7 @@ const Navbar = () => {
             const isActive = pathName === item.path;
             return (
               <div
-                className={`border rounded-full py-2 px-7 box-border ${
+                className={` border rounded-full py-2 px-7 box-border ${
                   isActive && pathName
                     ? "border-Cus_Deep_Brown"
                     : "border-white"
@@ -68,7 +68,7 @@ const Navbar = () => {
                 key={item.path}
               >
                 <Link href={item.path}>
-                  <p className="base_text text-Cus_Deep_Brown tracking-wider hover:scale-[1.15]">
+                  <p className="mouse_interactive base_text text-Cus_Deep_Brown tracking-wider hover:scale-[1.15]">
                     {item.label}
                   </p>
                 </Link>
@@ -82,7 +82,7 @@ const Navbar = () => {
               alt="樂台計畫_臺北科技大學"
             />
             <a
-              className="base_text text-Cus_Blue tracking-wider"
+              className="mouse_interactive base_text text-Cus_Blue tracking-wider"
               href="https://mcip.app/line"
               target="_blank"
             >

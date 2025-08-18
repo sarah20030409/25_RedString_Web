@@ -5,6 +5,7 @@ import TopButton from "./globals/topButton";
 import "./style/reset.css";
 import "./style/globals.css";
 import AOSInitializer from "./globals/AOSInitializer";
+import Cursor from "./globals/Cursor.component";
 
 export const metadata: Metadata = {
   title: "第二十五屆紅樓赤弦獎-吾聲",
@@ -49,9 +50,10 @@ export default function RootLayout({
         />
       </head>
       <body
-        className="bg-center bg-repeat bg-[length:800px]"
+        className="bg-center bg-repeat bg-[length:800px] cursor-none m_md:cursor-none "
         style={{ backgroundImage: `url('/background.webp')` }}
       >
+        <Cursor />
         <AOSInitializer />
         <div>
           <Header />

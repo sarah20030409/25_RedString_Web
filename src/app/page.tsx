@@ -1,8 +1,11 @@
-// pages/index.tsx
+import HomeBanner from "./home/home_banner";
+
 export default function Home() {
   return (
     <div>
-      <p>home page</p>
+      <div>
+        <HomeBanner />
+      </div>
     </div>
   );
 }
