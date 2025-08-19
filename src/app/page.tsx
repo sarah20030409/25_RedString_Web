@@ -13,16 +13,16 @@ export default function Home() {
           </div>
         </div> */}
         <HomeBanner />
-        <HomeContent />
+        {/* <HomeContent /> */}
       </div>
     </div>
   );
 }
 
-export function HomeContent() {
-  return (
-    <div>
-      <p>HomeContent</p>
-    </div>
-  );
-}
+// export function HomeContent() {
+//   return (
+//     <div>
+//       <p>HomeContent</p>
+//     </div>
+//   );
+// }
