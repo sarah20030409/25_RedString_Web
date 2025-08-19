@@ -37,7 +37,6 @@ const Cursor: React.FC = () => {
           borderWidth: 0.5,
         });
       };
-
       // Mouse out
       const handleMouseLeave = () => {
         gsap.to(cursorRef.current, {
@@ -46,10 +45,10 @@ const Cursor: React.FC = () => {
         });
       };
 
-      // Add event listeners
+      // Add event listeners, "el" means "DOM element".
       interactiveElements.forEach((el) => {
-        el.addEventListener("mouseenter", handleMouseEnter);
-        el.addEventListener("mouseleave", handleMouseLeave);
+        el.addEventListener("mouseenter", handleMouseEnter); // Do "handleMouseEnter" when the mouse enters the element
+        el.addEventListener("mouseleave", handleMouseLeave); // Do "handleMouseLeave" when the mouse leaves the element
       });
 
       window.addEventListener("mousemove", moveCursor);
@@ -70,7 +69,7 @@ const Cursor: React.FC = () => {
   return (
     <div
       ref={cursorRef}
-      className="duration-[70ms] fixed w-10 h-10 bg-transparent border border-Cus_Red rounded-full pointer-events-none z-50 -translate-x-1/2 -translate-y-1/2 hidden md:block"
+      className="duration-[50ms] fixed w-10 h-10 bg-transparent border border-Cus_Red rounded-full pointer-events-none z-50 -translate-x-1/2 -translate-y-1/2 hidden md:block"
     />
   );
 };

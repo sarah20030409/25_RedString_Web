@@ -29,7 +29,7 @@ export default function TopButton() {
   return (
     <div>
       <button
-        className={`fixed bottom-10 right-10 ${
+        className={`mouse_interactive fixed bottom-10 right-10 ${
           isVisible ? "opacity-100" : "opacity-0 pointer-events-none"
         }`}
         onClick={scrollToTop}

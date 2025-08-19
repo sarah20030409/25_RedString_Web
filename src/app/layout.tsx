@@ -50,8 +50,8 @@ export default function RootLayout({
         />
       </head>
       <body
-        className="bg-center bg-repeat bg-[length:800px] cursor-none m_md:cursor-none "
-        style={{ backgroundImage: `url('/background.webp')` }}
+        className="bg-center bg-repeat bg-[length:800px] cursor-none bg-[url('/background.webp')]"
+        // style={{ backgroundImage: `url('/background.webp')` }} // Put background url with tailwind, background images are processed during the build phase, eliminating any issues with inconsistencies between SSR and CSR.
       >
         <Cursor />
         <AOSInitializer />
