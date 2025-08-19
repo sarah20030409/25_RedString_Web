@@ -5,7 +5,7 @@ interface SectionTitleProps {
   style?: string;
 }
 
-export const SectionTitle: FC<SectionTitleProps> = ({
+const SectionTitle: FC<SectionTitleProps> = ({
   title,
   style = "section_title",
 }) => {
@@ -19,3 +19,5 @@ export const SectionTitle: FC<SectionTitleProps> = ({
     </div>
   );
 };
+
+export default SectionTitle;

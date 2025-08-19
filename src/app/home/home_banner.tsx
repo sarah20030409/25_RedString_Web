@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
-import { SectionTitle } from "../globals/section_title";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 export default function HomeBanner() {
   return (
