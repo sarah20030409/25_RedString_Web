@@ -4,7 +4,7 @@ import Footer from "./globals/footer";
 import TopButton from "./globals/topButton";
 import "./style/reset.css";
 import "./style/globals.css";
-import AOSInitializer from "./globals/AOSInitializer";
+// import AOSInitializer from "./globals/AOSInitializer";
 import Cursor from "./globals/Cursor.component";
 
 export const metadata: Metadata = {
@@ -54,11 +54,10 @@ export default function RootLayout({
         // style={{ backgroundImage: `url('/background.webp')` }} // Put background url with tailwind, background images are processed during the build phase, eliminating any issues with inconsistencies between SSR and CSR.
       >
         <Cursor />
-        <AOSInitializer />
         <div>
           <Header />
         </div>
-        <div className="mb-10 -mt-10 max-md:-mt-1">{children}</div>
+        <div className=" max-md:-mt-1">{children}</div>
         <TopButton />
         <Footer />
       </body>

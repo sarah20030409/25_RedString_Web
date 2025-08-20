@@ -13,7 +13,7 @@
   }
 
   .medium_text {
-    @apply base_text text-lg font-medium;
+    @apply base_text text-lg font-medium max-m_md:text-base;
   }
 
   .large_text {
@@ -21,7 +21,7 @@
   }
 
   .section_title {
-    @apply base_text text-2xl font-medium;
+    @apply base_text text-2xl font-medium max-m_md:text-xl;
   }
 
   .medium_title {
@@ -31,6 +31,30 @@
   .big_title {
     @apply text-Cus_Red text-[2rem] font-bold tracking-[5px];
   }
+
+  .home_custom_title {
+    @apply base_text text-4xl font-bold tracking-[20px] [writing-mode:vertical-lr] max-m_md:tracking-[15px] max-m_md:text-2xl;
+  }
+
+  .button_text {
+    @apply section_title text-white font-bold tracking-[8px] relative z-10;
+  }
+
+  /* ==== Button & hover style ====*/
+  .button_style {
+    @apply py-5 pl-14 pr-12 relative inline-block max-m_md:py-4 max-m_md:pl-10 max-m_md:pr-8;
+  }
+  .button_bg {
+    @apply bg-red_brown_gradient_BTN rounded-full absolute inset-0 blur-sm;
+    z-index: -1;
+  }
+  .button_bg_hover {
+    @apply bg-Cus_Brown rounded-full absolute inset-0 blur-sm opacity-0;
+  }
+  .button_style:hover .button_bg_hover {
+    @apply opacity-100 scale-95;
+  }
+  /* ==== ==== ==== */
 }
 
 @layer base {

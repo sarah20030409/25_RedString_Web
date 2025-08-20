@@ -12,7 +12,7 @@ const SectionTitle: FC<SectionTitleProps> = ({
   return (
     <div>
       <div
-        className={`bg-[url('/titleFrame.webp')] bg-no-repeat bg-center bg-contain py-[5px]`}
+        className={`bg-[url('/titleFrame.webp')] bg-no-repeat bg-center bg-contain py-[5px] text-center max-sm:scale-90`}
       >
         <h3 className={`${style}`}>{title}</h3>
       </div>
