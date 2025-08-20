@@ -28,7 +28,7 @@ export default function Home() {
   );
 }
 
-export function Section01() {
+function Section01() {
   const infoList: HomeProps[] = [
     {
       image: "/home/Home_performance_img_01.webp",
@@ -84,7 +84,7 @@ export function Section01() {
   );
 }
 
-export function Section02() {
+function Section02() {
   return (
     <div className="flex justify-center w-full  pt-44 max-lg:pt-24 ">
       <iframe
