@@ -1,26 +1,11 @@
+import PageBanner from "../globals/pageBanner";
+
 export default function About() {
   return (
     <div>
-      <p className="text-5xl">About page</p>
-      <p className="text-5xl">About page</p>
-      <p className="text-5xl">About page</p>
-      <p className="text-5xl">About page</p>
-      <p className="text-5xl">About page</p>
-      <p className="text-5xl">About page</p>
-      <p className="text-5xl">About page</p>
-      <p className="text-5xl">About page</p>
-      <p className="text-5xl">About page</p>
-      <p className="text-5xl">About page</p>
-      <p className="text-5xl">About page</p>
-      <p className="text-5xl">About page</p>
-      <p className="text-5xl">About page</p>
-      <p className="text-5xl">About page</p>
-      <p className="text-5xl">About page</p>
-      <p className="text-5xl">About page</p>
-      <p className="text-5xl">About page</p>
-      <p className="text-5xl">About page</p>
-      <p className="text-5xl">About page</p>
-      <p className="text-5xl">About page</p>
+      <div>
+        <PageBanner title="關於赤弦" />
+      </div>
     </div>
   );
 }

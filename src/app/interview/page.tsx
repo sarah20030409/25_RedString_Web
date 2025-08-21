@@ -1,7 +1,11 @@
+import PageBanner from "../globals/pageBanner";
+
 export default function Interview() {
   return (
     <div>
-      <p>interview page</p>
+      <div>
+        <PageBanner title="採訪消息" />
+      </div>
     </div>
   );
 }
