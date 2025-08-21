@@ -1,6 +1,7 @@
 import HomeBanner from "./home/home_banner";
 import SectionTitle from "./globals/section_title";
 import { ButtonSwitchPage } from "./globals/button_style";
+import Loading from "./loading";
 
 interface HomeProps {
   image: string;
@@ -13,6 +14,7 @@ export default function Home() {
     <div>
       <div>
         <div>
+          {/* <Loading /> */}
           <HomeBanner />
         </div>
         <div className="pt-[10%] max-m_md:pt-[15%] max-sm:pt-[30%]">
@@ -61,7 +63,7 @@ function Section01() {
               <div className="flex justify-center text-center">
                 <div>
                   <div className="flex justify-center mt-3 max-sm:scale-[85%]">
-                    <div className="border border-Cus_Brown rounded-full p-[5px]">
+                    <div className="border border-Cus_Brown rounded-full p-[5px] w-fit">
                       <div className="border-[2px] border-Cus_Brown rounded-full pl-[7px] pr-[8px] pt-4 max-m_md:pl-[3px] max-m_md:pr-1 max-m_md:pt-3">
                         <p className="home_custom_title">{item.title}</p>
                       </div>
