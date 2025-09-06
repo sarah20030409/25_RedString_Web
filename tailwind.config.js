@@ -37,9 +37,11 @@ module.exports = {
       },
       screens: {
         sm: "420px",
+        m_sm: "550px",
         md: "740px", // phone
         m_md: "1024px", // tablet
         lg: "1250px",
+        xl: "1700px", // wide desktop
       },
     },
   },

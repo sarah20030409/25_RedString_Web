@@ -11,9 +11,9 @@ const PageBanner: FC<pageBannerProps> = ({ title }) => {
       className={`bg-[url('/pageTitleBg02.webp')] bg-no-repeat bg-center pb-[3%] bg-[size:50%] max-m_md:bg-[size:65%] max-md:bg-[size:85%]`}
     >
       <div
-        className={`bg-[url('/pageTitleBg01.webp')] bg-no-repeat bg-center bg-contain h-64 flex justify-center items-center  max-m_md:scale-90 max-md:scale-75 max-sm:scale-[60%]`}
+        className={`bg-[url('/pageTitleBg01.webp')] bg-no-repeat bg-center bg-contain h-72 flex justify-center items-center max-lg:h-64 max-m_md:scale-90 max-md:scale-75 max-sm:scale-[60%]`}
       >
-        <h4 className="big_title text-center text-5xl tracking-[41px] pb-3 -mr-11 max-sm:scale-95">
+        <h4 className="big_title text-center text-5xl tracking-[53px] -mr-14 pb-3 max-lg:-mr-11 max-lg:tracking-[41px]  max-sm:scale-95 max-md:tracking-[45px]">
           {title}
         </h4>
       </div>
