@@ -1,5 +1,5 @@
 import PageBanner from "../globals/pageBanner";
-import AboutSection02 from "./aboutSection02";
+import AboutSection02 from "./components/aboutSection02";
 import SectionTitle from "../globals/section_title";
 interface Member {
   member_Id: string;
@@ -81,19 +81,84 @@ export default function About() {
 
 const MemberList: React.FC = () => {
   const member = [
-    { member_Id: "01", member_job: "總召", member_name: "黃聖翔" },
-    { member_Id: "02", member_job: "副召", member_name: "陳虹華" },
-    { member_Id: "03", member_job: "公關", member_name: "王翊瑄" },
-    { member_Id: "04", member_job: "公關", member_name: "曾怡瑄" },
-    { member_Id: "05", member_job: "活動", member_name: "江憫真" },
-    { member_Id: "06", member_job: "活動", member_name: "王承惠" },
-    { member_Id: "07", member_job: "報名", member_name: "林英豪" },
-    { member_Id: "08", member_job: "報名", member_name: "林佳璐" },
-    { member_Id: "09", member_job: "報名", member_name: "洪逢禧" },
-    { member_Id: "10", member_job: "宣傳", member_name: "張新岳" },
-    { member_Id: "11", member_job: "宣傳", member_name: "黃以恩" },
-    { member_Id: "12", member_job: "美宣", member_name: "柯蓉云" },
-    { member_Id: "13", member_job: "器材", member_name: "劉巳緯" },
+    {
+      member_Id: "01",
+      member_job: "總召",
+      member_name: "黃聖翔",
+      member_ig: "zpp.6699",
+    },
+    {
+      member_Id: "02",
+      member_job: "副召",
+      member_name: "陳虹華",
+      member_ig: "hhc_513",
+    },
+    {
+      member_Id: "03",
+      member_job: "公關",
+      member_name: "王翊瑄",
+      member_ig: "_i_sen",
+    },
+    {
+      member_Id: "04",
+      member_job: "公關",
+      member_name: "曾怡瑄",
+      member_ig: "eva.tseng.0820",
+    },
+    {
+      member_Id: "05",
+      member_job: "活動",
+      member_name: "江憫真",
+      member_ig: "mzhen._",
+    },
+    {
+      member_Id: "06",
+      member_job: "活動",
+      member_name: "王承惠",
+      member_ig: "wchui_",
+    },
+    {
+      member_Id: "07",
+      member_job: "報名",
+      member_name: "林英豪",
+      member_ig: "haoooo.510",
+    },
+    {
+      member_Id: "08",
+      member_job: "報名",
+      member_name: "林佳璐",
+      member_ig: "kaluuul",
+    },
+    {
+      member_Id: "09",
+      member_job: "報名",
+      member_name: "洪逢禧",
+      member_ig: "fengxi_1130",
+    },
+    {
+      member_Id: "10",
+      member_job: "宣傳",
+      member_name: "張新岳",
+      member_ig: "_uuui_yue_",
+    },
+    {
+      member_Id: "11",
+      member_job: "宣傳",
+      member_name: "黃以恩",
+      member_ig: "en_la_94",
+    },
+    {
+      member_Id: "12",
+      member_job: "美宣",
+      member_name: "柯蓉云",
+      member_ig: "kkoko_0424",
+    },
+    {
+      member_Id: "13",
+      member_job: "器材",
+      member_name: "劉巳緯",
+      member_ig: "four_tailssss",
+    },
   ];
   return (
     <div className="px-[25%] flex justify-center flex-wrap max-xl:px-[16%] max-lg:px-[8%] max-md:px-[4%]">
@@ -114,10 +179,15 @@ const MemberList: React.FC = () => {
             key={item.member_Id}
           >
             <div data-aos="fade-up">
-              <img
-                className="w-60 max-md:w-56 max-m_sm:w-44 max-sm:w-36"
-                src={`/about/members/m_${item.member_Id}.webp`}
-              />
+              <a
+                href={`https://www.instagram.com/${item.member_ig}`}
+                target="_blank"
+              >
+                <img
+                  className="w-60 max-md:w-56 max-m_sm:w-44 max-sm:w-36 hover:scale-105 "
+                  src={`/about/members/m_${item.member_Id}.webp`}
+                />
+              </a>
               <p className="medium_text text-center py-1 max-md:text-sm">
                 {item.member_job}
               </p>

@@ -23,8 +23,12 @@ export const ButtonForDownload: FC<ButtonStyleProps> = ({
   onClickDownload,
 }) => {
   return (
-    <div>
-      <button>{text}</button>
+    <div className="flex justify-center">
+      <a className=" button_style" href={onClickDownload} download>
+        <span className="button_bg"></span>
+        <span className="button_bg_hover"></span>
+        <p className="button_text">{text}</p>
+      </a>
     </div>
   );
 };

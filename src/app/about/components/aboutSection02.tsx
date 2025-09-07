@@ -28,7 +28,7 @@ export default function AboutSection02() {
                   onClick={() => {
                     setSelectedIndex(index);
                   }}
-                  className="bg-[url('/about/red_brown_dot.webp')] bg-contain bg-no-repeat w-36 h-36 pt-4 flex justify-center items-center max-m_sm:w-32 max-m_sm:h-32"
+                  className="bg-[url('/about/red_brown_dot.webp')] bg-contain bg-no-repeat w-36 h-36 pt-4 flex justify-center items-center max-m_sm:w-32 max-m_sm:h-32 "
                 >
                   <p className="ArticleBTN_text">{item}</p>
                 </a>
