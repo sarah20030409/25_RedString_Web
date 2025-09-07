@@ -42,6 +42,7 @@ module.exports = {
         m_md: "1024px", // tablet
         lg: "1250px",
         xl: "1700px", // wide desktop
+        xxl: "1920px",
       },
     },
   },

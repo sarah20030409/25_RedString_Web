@@ -1,6 +1,11 @@
 import PageBanner from "../globals/pageBanner";
 import AboutSection02 from "./aboutSection02";
 import SectionTitle from "../globals/section_title";
+interface Member {
+  member_Id: string;
+  member_job: string;
+  member_name: string;
+}
 
 export default function About() {
   return (
@@ -59,8 +64,70 @@ export default function About() {
       </div>
       {/* section03 */}
       <div>
-        <SectionTitle title="籌備團隊" />
+        <div className="mb-[3%]">
+          <SectionTitle title="籌備團隊" />
+          <p className="large_text text-center py-2">采音吉他社</p>
+        </div>
+
+        <div>
+          <div className="pb-[15%] bg-[url('/about/Bg_Stroke_member.webp')] bg-no-repeat bg-center  bg-[length:40%_auto] max-m_md:bg-[length:55%_auto] max-md:bg-[length:70%_auto] max-m_sm:bg-[length:90%_auto]">
+            <MemberList />
+          </div>
+        </div>
       </div>
     </div>
   );
 }
+
+const MemberList: React.FC = () => {
+  const member = [
+    { member_Id: "01", member_job: "總召", member_name: "黃聖翔" },
+    { member_Id: "02", member_job: "副召", member_name: "陳虹華" },
+    { member_Id: "03", member_job: "公關", member_name: "王翊瑄" },
+    { member_Id: "04", member_job: "公關", member_name: "曾怡瑄" },
+    { member_Id: "05", member_job: "活動", member_name: "江憫真" },
+    { member_Id: "06", member_job: "活動", member_name: "王承惠" },
+    { member_Id: "07", member_job: "報名", member_name: "林英豪" },
+    { member_Id: "08", member_job: "報名", member_name: "林佳璐" },
+    { member_Id: "09", member_job: "報名", member_name: "洪逢禧" },
+    { member_Id: "10", member_job: "宣傳", member_name: "張新岳" },
+    { member_Id: "11", member_job: "宣傳", member_name: "黃以恩" },
+    { member_Id: "12", member_job: "美宣", member_name: "柯蓉云" },
+    { member_Id: "13", member_job: "器材", member_name: "劉巳緯" },
+  ];
+  return (
+    <div className="px-[25%] flex justify-center flex-wrap max-xl:px-[16%] max-lg:px-[8%] max-md:px-[4%]">
+      {member.map((item) => {
+        return (
+          <div
+            className={`
+              ${
+                item.member_job !== "報名"
+                  ? " mx-[10%] my-[5%] max-lg:mx-[8%]"
+                  : " mx-[2%] my-[5%] "
+              } 
+              ${
+                item.member_Id === "09"
+                  ? "max-m_md:mx-[17%]"
+                  : "max-m_md:mx-[5%] max-md:mx-[2%] max-md:my-[8%] max-m_sm:mx-1 "
+              }`}
+            key={item.member_Id}
+          >
+            <div data-aos="fade-up">
+              <img
+                className="w-60 max-md:w-56 max-m_sm:w-44 max-sm:w-36"
+                src={`/about/members/m_${item.member_Id}.webp`}
+              />
+              <p className="medium_text text-center py-1 max-md:text-sm">
+                {item.member_job}
+              </p>
+              <p className="large_text text-center max-md:text-lg ">
+                {item.member_name}
+              </p>
+            </div>
+          </div>
+        );
+      })}
+    </div>
+  );
+};
