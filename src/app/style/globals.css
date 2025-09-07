@@ -41,7 +41,7 @@
   }
 
   .ArticleBTN_text {
-    @apply text-3xl h-28 text-center leading-10 text-white font-bold tracking-[20px] relative z-10;
+    @apply text-3xl h-28 text-center leading-10 text-white font-bold tracking-[20px] relative z-10 max-sm:text-2xl max-sm:h-24;
     writing-mode: vertical-lr;
   }
 
@@ -65,26 +65,9 @@
   }
   /* ==== ==== ==== */
 
-  /* ==== Article button & hover style ====*/
-  .ArticleBTN_style {
-    @apply w-36 h-36 relative inline-block transition-none;
-  }
-  .ArticleBTN_bg {
-    @apply bg-red_brown_gradient_BTN rounded-full absolute inset-0 blur-sm;
-    z-index: -1;
-  }
-  .ArticleBTN_text_out {
-    @apply flex justify-center items-center pt-5 h-full box-border;
-  }
-  .ArticleBTN_bg_hover {
-    @apply bg-Cus_Brown rounded-full absolute inset-0 blur-sm opacity-0;
-  }
-  .ArticleBTN_style:hover .ArticleBTN_bg_hover {
-    @apply opacity-100 scale-95;
-  }
-  /* === Selected === */
+  /* === Article button selected === */
   .ArticleBTN_selected {
-    @apply w-36 h-36 flex justify-center items-center pt-5 border-2 border-Cus_Brown rounded-full transition-none;
+    @apply w-32 h-32 flex justify-center m-2 items-center pt-5 border-2 border-Cus_Brown rounded-full transition-none;
   }
   /* ==== ==== ==== */
 }

@@ -16,11 +16,11 @@ export default function AboutSection02() {
         {articleTitle.map((item, index) => {
           return (
             <div
-              className="py-[15%] scale-105 max-md:scale-100 max-md:px-[3%]  max-md:py-[10%] max-m_sm:scale-[85%] max-m_sm:px-0"
+              className="py-[15%] scale-105 max-md:scale-100 max-md:px-[3%]  max-md:py-[10%] max-m_sm:scale-90 max-m_sm:px-0 "
               key={item}
             >
               {selectedIndex === index ? (
-                <a className=" ArticleBTN_selected max-sm:w-28 max-sm:h-28 max-sm:mb-4">
+                <a className=" ArticleBTN_selected max-m_sm:w-28 max-m_sm:h-28">
                   <p className="ArticleBTN_selected_text ">{item}</p>
                 </a>
               ) : (
@@ -28,13 +28,9 @@ export default function AboutSection02() {
                   onClick={() => {
                     setSelectedIndex(index);
                   }}
-                  className="ArticleBTN_style max-sm:w-28 max-sm:h-28"
+                  className="bg-[url('/about/red_brown_dot.webp')] bg-contain bg-no-repeat w-36 h-36 pt-4 flex justify-center items-center max-m_sm:w-32 max-m_sm:h-32"
                 >
-                  <span className="ArticleBTN_bg "></span>
-                  <span className="ArticleBTN_bg_hover"></span>
-                  <div className="ArticleBTN_text_out">
-                    <p className="ArticleBTN_text ">{item}</p>
-                  </div>
+                  <p className="ArticleBTN_text">{item}</p>
                 </a>
               )}
             </div>
