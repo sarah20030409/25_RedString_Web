@@ -69,7 +69,7 @@ const Cursor: React.FC = () => {
   return (
     <div
       ref={cursorRef}
-      className="duration-[50ms] fixed w-10 h-10 bg-transparent border border-Cus_Red rounded-full pointer-events-none z-50 -translate-x-1/2 -translate-y-1/2 hidden md:block"
+      className="duration-[50ms] fixed w-10 h-10 bg-transparent border border-Cus_Red rounded-full pointer-events-none z-50 -translate-x-1/2 -translate-y-1/2 hidden m_md:block"
     />
   );
 };

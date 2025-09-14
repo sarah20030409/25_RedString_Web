@@ -13,7 +13,9 @@ export default function HomeBanner() {
     <div>
       <AOSInitializer />
       <BigBannerImage />
-      <BannerTitle />
+      <div data-aos="fade-up" className="block">
+        <BannerTitle />
+      </div>
     </div>
   );
 }
@@ -111,7 +113,7 @@ export function BigBannerImage() {
 
 export function BannerTitle() {
   return (
-    <div data-aos="fade-up" className="text-center aos-init">
+    <div className="text-center aos-init">
       <div className="large_text tracking-[20px] leading-10 max-m_md:tracking-[15px] max-md:tracking-[10px] max-sm:tracking-[5px]">
         <h1>｜赤弦獎｜</h1>
         <h2>第貳拾伍屆紅樓琴緣民歌比賽</h2>

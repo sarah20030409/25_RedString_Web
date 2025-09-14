@@ -1,5 +1,6 @@
 import React from "react";
 import PageBanner from "../globals/pageBanner";
+import SectionTitle from "../globals/section_title";
 
 export default function Sponsors() {
   return (
@@ -72,12 +73,13 @@ const SponsorSingle: React.FC = () => {
     },
   ];
   return (
-    <div className="mx-[5%] mb-[8%]">
-      <div data-aos="fade-up" className="pt-[5%] flex justify-center flex-wrap">
+    <div className="mx-[5%] mb-[8%] max-md:mx-[3%] pt-[5%]">
+      <SectionTitle title="贊助廠商" />
+      <div data-aos="fade-up" className=" flex justify-center flex-wrap">
         {sponsor.map((sponsor, index) => (
           <div
             key={index}
-            className=" w-56 mx-[2%] my-16 max-lg:w-48 max-lg:mx-[1%] max-lg:my-12 max-md:w-44 max-md:my-8"
+            className=" w-56 mx-[2%] my-16 max-lg:w-48 max-lg:mx-[1%] max-lg:my-12 max-md:mx-[2%] max-md:w-44 max-m_sm:w-[150px] max-md:my-8"
           >
             <div>
               <a href={sponsor.sponsor_link} target="_blank" rel="noreferrer">
@@ -99,12 +101,13 @@ const SponsorSingle: React.FC = () => {
           </div>
         ))}
       </div>
-      <div className="mx-auto w-[90%] border-t border-Cus_Brown"></div>
+      <div className="mx-auto w-[90%] my-[8%] border-t border-Cus_Brown max-m_sm:my-[10%]"></div>
+      <SectionTitle title="協辦單位" />
       <div data-aos="fade-up" className="pt-[3%] flex justify-center flex-wrap">
         {co_organizer.map((co_organizer, index) => (
           <div
             key={index}
-            className="w-56 mx-[10%] my-16 max-lg:w-48 max-lg:mx-[5%] max-lg:my-12 max-md:w-44 max-md:my-8 max-m_sm:mx-[1%]"
+            className="w-56 mx-[10%] my-16 max-lg:w-48 max-lg:mx-[5%] max-lg:my-12 max-md:mx-[2%] max-md:w-44 max-md:my-8 max-m_sm:w-[150px] max-m_sm:mx-[2%] "
           >
             <div>
               <a

@@ -62,11 +62,11 @@ function Section01() {
               </div>
               <div className="flex justify-center text-center">
                 <div>
-                  <div className="flex justify-center mt-3 max-sm:scale-[85%] max-md:mt-0">
-                    <div className="border border-Cus_Brown rounded-full p-[5px] max-m_md:w-[14%] max-md:w-[16%]">
-                      <div className="border-[2px] border-Cus_Brown rounded-full pl-[7px] pr-[8px] pt-4 max-m_md:pl-[3px] max-m_md:pr-1 max-m_md:pt-3">
-                        <p className="home_custom_title">{item.title}</p>
-                      </div>
+                  <div className="flex justify-center">
+                    <div className="bg-[url('/home/doubleLine.svg')] bg-no-repeat bg-center bg-contain p-3 max-m_md:p-2">
+                      <p className="home_custom_title mt-4 mr-[3px]">
+                        {item.title}
+                      </p>
                     </div>
                   </div>
                   <p className="medium_text py-2 font-bold  max-md:py-1 ">

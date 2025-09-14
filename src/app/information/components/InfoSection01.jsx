@@ -46,7 +46,7 @@ export default function InfoSection01() {
               </p>
               <ButtonForDownload
                 text="點擊下載"
-                onClickDownload="/information/第二十五屆赤弦獎參賽簡章.pdf"
+                onClickDownload="/information/第二十五屆赤弦獎報名須知.pdf"
               />
             </div>
             <span className={double_line_style} />
@@ -79,7 +79,7 @@ export default function InfoSection01() {
                 </p>
                 <ButtonForDownload
                   text="點擊下載"
-                  onClickDownload="/information/第二十五屆赤弦獎參賽簡章.pdf"
+                  onClickDownload="/information/第二十五屆赤弦獎報名須知.pdf"
                 />
               </div>
               <span className={m_double_line_style} />
