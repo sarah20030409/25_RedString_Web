@@ -56,7 +56,7 @@ export default function SwiperImage() {
         </div>
         <ButtonSwitchPage
           text="交通影片"
-          onClickGo="https://goo.gl/maps/1YtXbX9yCkT4TcKw5"
+          onClickGo="https://youtu.be/NVNC1BzmDE8"
         />
       </div>
     </div>

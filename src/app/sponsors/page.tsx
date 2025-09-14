@@ -72,7 +72,7 @@ const SponsorSingle: React.FC = () => {
     },
   ];
   return (
-    <div className="mx-[5%] mb-[5%]">
+    <div className="mx-[5%] mb-[8%]">
       <div data-aos="fade-up" className="pt-[5%] flex justify-center flex-wrap">
         {sponsor.map((sponsor, index) => (
           <div
