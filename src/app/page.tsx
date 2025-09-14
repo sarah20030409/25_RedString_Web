@@ -34,12 +34,12 @@ function Section01() {
   const infoList: HomeProps[] = [
     {
       image: "/home/Home_performance_img_01.webp",
-      title: "初賽",
+      title: "01",
       date: "11/15~11/16",
     },
     {
       image: "/home/Home_performance_img_02.webp",
-      title: "決賽",
+      title: "02",
       date: "12/14",
     },
   ];
@@ -63,11 +63,10 @@ function Section01() {
               <div className="flex justify-center text-center">
                 <div>
                   <div className="flex justify-center">
-                    <div className="bg-[url('/home/doubleLine.svg')] bg-no-repeat bg-center bg-contain p-3 max-m_md:p-2">
-                      <p className="home_custom_title mt-4 mr-[3px]">
-                        {item.title}
-                      </p>
-                    </div>
+                    <img
+                      className="w-[15%] max-md:w-[12%]"
+                      src={`/home/circleTitle${item.title}.svg`}
+                    />
                   </div>
                   <p className="medium_text py-2 font-bold  max-md:py-1 ">
                     {item.date}

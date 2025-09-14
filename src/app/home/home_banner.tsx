@@ -64,28 +64,23 @@ export function BigBannerImage() {
 
   return (
     <div className="overflow-hidden">
-      <div className="mt-[20%] mb-[28%] max-m_md:mt-[30%] max-m_md:mb-[35%] max-md:mt-[50%] max-md:mb-[50%]">
+      <div className="relative mt-[20%] mb-[28%] min-h-[8vh] max-m_md:mt-[30%] max-m_md:mb-[35%] max-md:mt-[50%] max-md:mb-[50%]">
         <div className="flex justify-center items-center">
           {/* Big word */}
           <div className="absolute w-[40%] z-30 max-m_md:w-[53%] max-md:w-[75%]">
             <img
               src="/home/Home_Img_01.webp"
               alt="第二十五屆赤弦獎-吾聲,紅樓琴緣民歌比賽。"
+              className="w-full h-auto"
             />
           </div>
-          {/* Word shadow */}
-          {/* <div className="absolute w-[40%] animate-pulse z-20 max-m_md:w-[53%] max-md:w-[75%]">
-            <img
-              src="/home/Home_Img_02.webp"
-              alt="第二十五屆赤弦獎-吾聲,紅樓琴緣民歌比賽。"
-            />
-          </div> */}
           {/* Red stroke */}
           <div className="absolute w-[40%] z-10 max-m_md:w-[53%] max-md:w-[75%]">
             <img
               ref={redSrokeRef}
               src="/home/Home_Red_Strokes.webp"
               alt="第二十五屆赤弦獎-吾聲,紅樓琴緣民歌比賽。"
+              className="w-full h-auto"
             />
           </div>
           {/* Small word */}
@@ -95,6 +90,7 @@ export function BigBannerImage() {
                 ref={leftImageRef}
                 src="/home/Home_Wu.webp"
                 alt="赤弦獎_吾聲"
+                className="w-full h-auto"
               />
             </div>
             <div className="w-[20%] ">
