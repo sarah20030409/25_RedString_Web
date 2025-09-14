@@ -15,18 +15,17 @@ export const metadata: Metadata = {
     shortcut: "/favicon.ico",
   },
   keywords: ["RedString", "赤弦獎", "采音吉他社", "臺北科技大學"],
-  metadataBase: new URL("https://25-red-string-web.vercel.app/"), // 等購買域名在改
+  metadataBase: new URL("https://redstringaward.it.com/"),
   authors: [{ name: "Tsaiyin_Guitar" }],
   openGraph: {
     title: "第二十五屆紅樓赤弦獎-吾聲",
     description:
       "第二十五屆紅樓赤弦獎-吾聲，主辦單位:國立臺北科技大學采音吉他社",
-    // url: "https://25-red-string-web.vercel.app/", // 等購買域名在放
+    url: "https://redstringaward.it.com/",
     siteName: "RedString Award",
-    // images: "/favicon.ico",
     images: [
       {
-        url: "https://25-red-string-web.vercel.app/favicon.ico", // 等購買域名在放
+        url: "https://redstringaward.it.com/favicon.ico",
         width: 1200,
         height: 630,
         alt: "紅樓赤弦獎-吾聲",
@@ -50,7 +49,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className="bg-center bg-repeat bg-[length:800px] cursor-none bg-[url('/background.webp')]"
+        className="bg-center bg-repeat bg-[length:600px] cursor-none bg-[url('/background.webp')] max-m_md:bg-[length:400px]"
         // style={{ backgroundImage: `url('/background.webp')` }} // Put background url with tailwind, background images are processed during the build phase, eliminating any issues with inconsistencies between SSR and CSR.
       >
         <Cursor />

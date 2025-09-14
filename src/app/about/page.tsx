@@ -21,13 +21,11 @@ export default function About() {
             <div
               className={`bg-[url('/about/titleFrame.webp')] bg-no-repeat bg-center bg-contain py-[10px] text-center`}
             >
-              <h3 className="section_title font-semibold">
-                萬籟俱寂，吾聲獨醒
-              </h3>
+              <h3 className="section_title font-bold">萬籟俱寂，吾聲獨醒</h3>
             </div>
             {/* context */}
             <div className="pt-[2%] px-[5%] max-md:pt-[4%]">
-              <p className="medium_text font-bold text-center leading-8 text-wrap tracking-wider  max-md:leading-7">
+              <p className="medium_text font-medium text-center leading-8 text-wrap tracking-wider max-md:little_text  max-md:leading-6">
                 城市太匆忙了，
                 <br /> 腳步揚起的塵土，掩沒了我們原本的聲音。
                 <br />
@@ -70,7 +68,7 @@ export default function About() {
         </div>
 
         <div>
-          <div className="pb-[15%] bg-[url('/about/Bg_Stroke_member.webp')] bg-no-repeat bg-center  bg-[length:40%_auto] max-m_md:bg-[length:55%_auto] max-md:bg-[length:70%_auto] max-m_sm:bg-[length:90%_auto]">
+          <div className="pb-[15%] bg-[url('/about/Bg_Stroke_member.webp')] bg-no-repeat bg-center bg-[length:40%_auto] max-m_md:bg-[length:55%_auto] max-md:bg-[length:70%_auto] max-m_sm:bg-[length:90%_auto]">
             <MemberList />
           </div>
         </div>

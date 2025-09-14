@@ -10,7 +10,7 @@ export default function AboutSection02() {
     "采音吉他社，為臺北科技大學的音樂性社團，有來自各大專院校的學生參與，專注於音樂能力的提升和音樂表演的多樣性。涵蓋多種曲風，包括木歌和團歌，幫助社員掌握優秀的音樂技巧和表演方法。且社團也積極舉辦各類音樂活動，促進社員間的交流與合作。也協助學校籌辦赤弦獎，為音樂愛好者提供展現才華的舞台。",
   ];
   return (
-    <div className="flex justify-center px-[20%] items-stretch max-m_md:px-[8%] max-md:block ">
+    <div className="flex justify-center px-[15%] items-stretch max-lg:px-[10%] max-m_md:px-[8%] max-md:px-[5%] max-md:block ">
       {/* Selection title */}
       <div className="pr-[8%] max-md:flex max-md:justify-center max-md:p-0 max-md:items-center ">
         {articleTitle.map((item, index) => {
@@ -40,17 +40,17 @@ export default function AboutSection02() {
       {/* Article display */}
       <div className="flex items-stretch border border-Cus_Brown p-1 bg-white bg-opacity-50 ">
         {selectedIndex !== -1 && (
-          <div className="border border-Cus_Brown px-[5%] py-[8%] ">
+          <div className="border border-Cus_Brown px-[5%] py-[8%]  max-md:px-[3%]">
             <div data-aos="fade-up">
-              <div className="flex justify-center  max-m_md:scale-90 max-sm:scale-75">
-                <div className="border-2 border-Cus_Brown rounded-full pl-8 pr-5 py-2 mb-[5%]">
+              <div className="flex justify-center max-m_md:scale-90 max-sm:scale-75">
+                <div className="border-2 border-Cus_Brown rounded-full pl-8 pr-5 py-2 mb-[5%] ">
                   <h5 className="medium_title text-3xl tracking-[10px] font-medium">
                     {articleTitle[selectedIndex]}
                   </h5>
                 </div>
               </div>
               <div>
-                <p className="medium_text font-bold text-center leading-loose max-md:tracking-wider max-sm:leading-normal">
+                <p className="medium_text text-center tracking-widest leading-loose max-md:tracking-widest max-sm:leading-normal">
                   {articleContent[selectedIndex]}
                 </p>
               </div>

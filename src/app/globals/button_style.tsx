@@ -9,7 +9,7 @@ interface ButtonStyleProps {
 export const ButtonSwitchPage: FC<ButtonStyleProps> = ({ text, onClickGo }) => {
   return (
     <div className="flex justify-center">
-      <a className=" button_style" href={onClickGo}>
+      <a className=" button_style" href={onClickGo} target="_blank">
         <span className="button_bg"></span>
         <span className="button_bg_hover"></span>
         <p className="button_text">{text}</p>

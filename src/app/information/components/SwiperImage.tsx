@@ -41,7 +41,7 @@ const SwiperImageComponent: React.FC = () => {
   }, []);
 
   return (
-    <div className="px-[5%]">
+    <div className="px-[5%] max-md:px-[8%]">
       <Swiper
         style={
           {
@@ -51,33 +51,36 @@ const SwiperImageComponent: React.FC = () => {
             "--swiper-navigation-size": "50px",
           } as React.CSSProperties
         }
-        slidesPerView={slidesPerView}
+        // RWD
+        breakpoints={{
+          1000: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          1250: {
+            slidesPerView: 2,
+            spaceBetween: 25,
+          },
+          1920: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+        }}
         zoom={true}
         navigation={true}
         pagination={{
           clickable: true,
         }}
-        modules={[Zoom, Navigation, Pagination]}
+        modules={[Zoom, Navigation]}
         className="select-none"
       >
-        <SwiperSlide>
-          <ImgList imgNum="02" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <ImgList imgNum="02" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <ImgList imgNum="03" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <ImgList imgNum="04" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <ImgList imgNum="05" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <ImgList imgNum="06" />
-        </SwiperSlide>
+        {["02", "02", "03", "04", "05", "06"].map((imgNum, index) => (
+          <SwiperSlide key={index}>
+            <div>
+              <ImgList imgNum={imgNum} />
+            </div>
+          </SwiperSlide>
+        ))}
       </Swiper>
     </div>
   );

@@ -72,12 +72,12 @@ export function BigBannerImage() {
             />
           </div>
           {/* Word shadow */}
-          <div className="absolute w-[40%] animate-pulse z-20 max-m_md:w-[53%] max-md:w-[75%]">
+          {/* <div className="absolute w-[40%] animate-pulse z-20 max-m_md:w-[53%] max-md:w-[75%]">
             <img
               src="/home/Home_Img_02.webp"
               alt="第二十五屆赤弦獎-吾聲,紅樓琴緣民歌比賽。"
             />
-          </div>
+          </div> */}
           {/* Red stroke */}
           <div className="absolute w-[40%] z-10 max-m_md:w-[53%] max-md:w-[75%]">
             <img
