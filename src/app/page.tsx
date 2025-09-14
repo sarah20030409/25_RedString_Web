@@ -68,10 +68,10 @@ function Section01() {
                       src={`/home/circleTitle${item.title}.svg`}
                     />
                   </div>
-                  <p className="medium_text py-2 font-bold  max-md:py-1 ">
+                  <p className="medium_text py-2 font-bold max-md:py-1 ">
                     {item.date}
                   </p>
-                  <p className="medium_text max-sm:tracking-[1px]">
+                  <p className="medium_text max-sm:tracking-[1px] max-sm:text-sm">
                     ◆ 國立臺北科技大學 學生活動中心 大禮堂 ◆
                   </p>
                 </div>
