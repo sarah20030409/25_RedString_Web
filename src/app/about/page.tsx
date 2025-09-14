@@ -184,6 +184,7 @@ const MemberList: React.FC = () => {
                 <img
                   className="w-60 max-md:w-56 max-m_sm:w-44 max-sm:w-36 hover:scale-105 "
                   src={`/about/members/m_${item.member_Id}.webp`}
+                  alt="赤弦獎大專院校音樂比賽-采音吉他社主辦團隊成員"
                 />
               </a>
               <p className="medium_text text-center py-1 max-md:text-sm">

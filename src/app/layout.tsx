@@ -10,13 +10,21 @@ import Cursor from "./globals/Cursor.component";
 export const metadata: Metadata = {
   title: "第二十五屆紅樓赤弦獎-吾聲",
   description: "第二十五屆紅樓赤弦獎-吾聲，主辦單位:國立臺北科技大學采音吉他社",
-  icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon.ico",
-  },
   keywords: ["RedString", "赤弦獎", "采音吉他社", "臺北科技大學"],
   metadataBase: new URL("https://redstringaward.it.com/"),
   authors: [{ name: "Tsaiyin_Guitar" }],
+
+  // 簡化的 icon 配置
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/favicon.ico", sizes: "16x16" },
+      { url: "/favicon.ico", sizes: "32x32" },
+    ],
+    shortcut: "/favicon.ico",
+    apple: "/favicon.ico",
+  },
+
   openGraph: {
     title: "第二十五屆紅樓赤弦獎-吾聲",
     description:
@@ -32,6 +40,12 @@ export const metadata: Metadata = {
       },
     ],
     type: "website",
+  },
+
+  // 基本的行動裝置配置
+  other: {
+    "apple-mobile-web-app-capable": "yes",
+    "apple-mobile-web-app-title": "赤弦獎",
   },
 };
 

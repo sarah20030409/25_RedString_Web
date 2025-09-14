@@ -42,7 +42,10 @@ export default function SwiperImage() {
                 className="px-[2%] max-lg:px-[1%] max-md:pt-[5%]"
                 key={index}
               >
-                <img src={`/information/infoImg_${index}.webp`} alt="赤弦獎" />
+                <img
+                  src={`/information/infoImg_${index}.webp`}
+                  alt="第二十五屆赤弦獎吾聲主視覺-臺北科技大學采音吉他社主辦民歌比賽"
+                />
               </div>
             );
           })}

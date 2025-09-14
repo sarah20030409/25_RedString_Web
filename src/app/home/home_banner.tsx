@@ -89,7 +89,7 @@ export function BigBannerImage() {
               <img
                 ref={leftImageRef}
                 src="/home/Home_Wu.webp"
-                alt="赤弦獎_吾聲"
+                alt="赤弦獎吾聲主題-吾字書法設計"
                 className="w-full h-auto"
               />
             </div>
@@ -97,7 +97,7 @@ export function BigBannerImage() {
               <img
                 ref={rightImageRef}
                 src="/home/Home_Sheng.webp"
-                alt="赤弦獎_吾聲"
+                alt="赤弦獎吾聲主題-聲字書法設計"
               />
             </div>
           </div>

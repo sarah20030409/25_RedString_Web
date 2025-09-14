@@ -77,7 +77,7 @@ const ImgList: React.FC<Props> = ({ imgNum }) => {
       <img
         className="h-[500px] w-full object-contain  max-md:h-[400px] max-sm:h-[300px]"
         src={`/information/swiperImages/swiper_${imgNum}.webp`}
-        alt="赤弦獎"
+        alt="「赤弦獎--紅樓琴緣民歌比賽」是采音吉他社最為重要且盛大的活動，自民國 90 年開始舉辦，至今即將進入第二十四屆。希望透過赤弦獎這個比賽，讓參賽者能夠不僅保有赤子之心，還能實踐對音樂的熱愛，在求學生涯中能有機會展現自我，並於賽事中發掘人才，提升國內的音樂素質。"
       />
     </div>
   );
