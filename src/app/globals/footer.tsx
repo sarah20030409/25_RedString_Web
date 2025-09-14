@@ -29,7 +29,7 @@ export default function Footer() {
               {/* Instagram */}
               <a
                 className={iconStyle}
-                href="https://www.instagram.com/redstring_24th/"
+                href="https://www.instagram.com/redstring_25th/"
                 target="_blank"
               >
                 <img src="/footer/IG.png" alt="赤弦獎官方Instagram" />

@@ -48,12 +48,12 @@ const SponsorSingle: React.FC = () => {
       sponsor_link: "https://www.instagram.com/89_loop/",
     },
     {
-      sponsor_img: "07",
+      sponsor_img: "08",
       sponsor_name: "財團法人華研基金會",
       sponsor_link: "https://himfoundation.org.tw",
     },
     {
-      sponsor_img: "10",
+      sponsor_img: "09",
       sponsor_name: "MÜST社團法人中華音樂著作權協會",
       sponsor_link: "https://www.must.org.tw/index.aspx",
     },

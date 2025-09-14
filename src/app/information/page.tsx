@@ -21,9 +21,9 @@ export default function SwiperImage() {
       </div>
 
       {/* section02 */}
-      <div className="pb-[10%]">
+      <div className="pb-[15%] pt-[5%] max-md:pb-[10%]">
         <SectionTitle title="報名流程" />
-        <div className="py-[8%]">
+        <div className="py-[6%] max-m_md:py-[8%]">
           <SwiperImageComponent />
         </div>
         <ButtonSwitchPage text="報名連結" onClickGo="https://mcip.app/line" />

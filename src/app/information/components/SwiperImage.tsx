@@ -14,46 +14,18 @@ interface Props {
 }
 
 const SwiperImageComponent: React.FC = () => {
-  const [slidesPerView, setSlidesPerView] = useState<number>(2);
-
-  useEffect(() => {
-    const updateSlidesPerView = () => {
-      if (window.innerWidth > 1250) {
-        setSlidesPerView(3);
-      } else if (window.innerWidth < 1250) {
-        setSlidesPerView(2);
-      } else if (window.innerWidth < 740) {
-        setSlidesPerView(1);
-      }
-    };
-
-    updateSlidesPerView();
-
-    const handleResize = () => {
-      updateSlidesPerView();
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-
   return (
-    <div className="px-[5%] max-md:px-[8%]">
+    <div className="px-[5%] max-md:px-[4%] ">
       <Swiper
         style={
           {
-            "--swiper-navigation-color": "#000",
-            "--swiper-pagination-color": "#000",
-            "--swiper-pagination-bullet-size": "5px",
+            "--swiper-navigation-color": "Brown",
             "--swiper-navigation-size": "50px",
           } as React.CSSProperties
         }
         // RWD
         breakpoints={{
-          1000: {
+          800: {
             slidesPerView: 1,
             spaceBetween: 20,
           },
@@ -74,7 +46,20 @@ const SwiperImageComponent: React.FC = () => {
         modules={[Zoom, Navigation]}
         className="select-none"
       >
-        {["02", "02", "03", "04", "05", "06"].map((imgNum, index) => (
+        {[
+          "01",
+          "02",
+          "03",
+          "04",
+          "05",
+          "06",
+          "07",
+          "08",
+          "09",
+          "10",
+          "11",
+          "12",
+        ].map((imgNum, index) => (
           <SwiperSlide key={index}>
             <div>
               <ImgList imgNum={imgNum} />
@@ -90,7 +75,7 @@ const ImgList: React.FC<Props> = ({ imgNum }) => {
   return (
     <div>
       <img
-        className="h-[550px] w-full object-contain"
+        className="h-[500px] w-full object-contain  max-md:h-[400px] max-sm:h-[300px]"
         src={`/information/swiperImages/swiper_${imgNum}.webp`}
         alt="赤弦獎"
       />

@@ -72,6 +72,13 @@
   /* ==== ==== ==== */
 }
 
+.swiper-button-next {
+  margin-right: -10px;
+}
+.swiper-button-prev {
+  margin-left: -10px;
+}
+
 @layer base {
   * {
     @apply duration-300;
