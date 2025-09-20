@@ -55,7 +55,7 @@ export default function SwiperImage() {
           className="large_text text-center font-bold py-[2%]  max-m_md:medium_text max-m_md:font-bold max-md:py-[4%] max-m_sm:scale-90"
         >
           <p className="py-1">詳細地址｜台北市大安區 忠孝東路三段一號</p>
-          <p className=" py-1">初賽地點｜臺北科技大學 中正館紀念館一樓</p>
+          <p className=" py-1">初賽地點｜臺北科技大學 學生活動中心一樓</p>
         </div>
         <ButtonSwitchPage
           text="交通影片"

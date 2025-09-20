@@ -49,6 +49,11 @@ const SponsorSingle: React.FC = () => {
       sponsor_link: "https://www.instagram.com/89_loop/",
     },
     {
+      sponsor_img: "07",
+      sponsor_name: "飛捷廣告影印數位印刷",
+      sponsor_link: "https://order.feijie.com.tw",
+    },
+    {
       sponsor_img: "08",
       sponsor_name: "財團法人華研基金會",
       sponsor_link: "https://himfoundation.org.tw",
@@ -71,6 +76,11 @@ const SponsorSingle: React.FC = () => {
       co_organizer_name: "禧樂音樂",
       co_organizer_link: "https://www.facebook.com/xiyue.com.tw/",
     },
+    {
+      co_organizer_img: "12",
+      co_organizer_name: "攝影功人",
+      co_organizer_link: "https://www.instagram.com/phomaster_2025",
+    },
   ];
   return (
     <div className="mx-[5%] mb-[8%] max-md:mx-[3%] pt-[5%]">
@@ -82,13 +92,22 @@ const SponsorSingle: React.FC = () => {
             className=" w-56 mx-[2%] my-16 max-lg:w-48 max-lg:mx-[1%] max-lg:my-12 max-md:mx-[2%] max-md:w-44 max-m_sm:w-[150px] max-md:my-8"
           >
             <div>
-              <a href={sponsor.sponsor_link} target="_blank" rel="noreferrer">
+              {sponsor.sponsor_link === " " ? (
                 <img
                   className="w-48 items-center mx-auto border border-Cus_Brown rounded-full max-lg:w-40 max-md:w-36 hover:scale-105"
                   src={`/sponsors/sponsor_${sponsor.sponsor_img}.webp`}
                   alt="red string"
                 />
-              </a>
+              ) : (
+                <a href={sponsor.sponsor_link} target="_blank" rel="noreferrer">
+                  <img
+                    className="w-48 items-center mx-auto border border-Cus_Brown rounded-full max-lg:w-40 max-md:w-36 hover:scale-105"
+                    src={`/sponsors/sponsor_${sponsor.sponsor_img}.webp`}
+                    alt="red string"
+                  />
+                </a>
+              )}
+
               <p className="little_text font-bold tracking-wider text-center leading-7 mt-6 max-md:mt-4">
                 {sponsor.sponsor_name.split("\n").map((line, index) => (
                   <span key={index}>
@@ -107,20 +126,29 @@ const SponsorSingle: React.FC = () => {
         {co_organizer.map((co_organizer, index) => (
           <div
             key={index}
-            className="w-56 mx-[10%] my-16 max-lg:w-48 max-lg:mx-[5%] max-lg:my-12 max-md:mx-[2%] max-md:w-44 max-md:my-8 max-m_sm:w-[150px] max-m_sm:mx-[2%] "
+            className="w-56 mx-[5%] my-16 max-lg:w-48 max-lg:mx-[1%] max-lg:my-12 max-md:mx-[2%] max-md:w-44 max-md:my-8 max-m_sm:w-[150px] max-m_sm:mx-[2%] "
           >
             <div>
-              <a
-                href={co_organizer.co_organizer_link}
-                target="_blank"
-                rel="noreferrer"
-              >
+              {co_organizer.co_organizer_link === " " ? (
                 <img
                   className="w-48 items-center mx-auto border border-Cus_Brown rounded-full max-lg:w-40 max-md:w-36 hover:scale-105"
                   src={`/sponsors/sponsor_${co_organizer.co_organizer_img}.webp`}
                   alt="red string"
                 />
-              </a>
+              ) : (
+                <a
+                  href={co_organizer.co_organizer_link}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img
+                    className="w-48 items-center mx-auto border border-Cus_Brown rounded-full max-lg:w-40 max-md:w-36 hover:scale-105"
+                    src={`/sponsors/sponsor_${co_organizer.co_organizer_img}.webp`}
+                    alt="red string"
+                  />
+                </a>
+              )}
+
               <p className="little_text font-bold tracking-wider text-center leading-7 mt-6 max-md:mt-4">
                 {co_organizer.co_organizer_name
                   .split("\n")
