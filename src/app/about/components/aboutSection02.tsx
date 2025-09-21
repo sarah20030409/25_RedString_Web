@@ -25,6 +25,7 @@ export default function AboutSection02() {
       articleImage: "./about/tsaiyinLogo.webp",
       articleLink:
         "https://www.youtube.com/@%E9%87%87%E5%85%89%E5%BD%B1%E5%83%8F",
+      imageTitle: "采光影像",
     },
   ];
   return (
@@ -75,17 +76,22 @@ export default function AboutSection02() {
                 </p>
                 <div>
                   {article[selectedIndex].articleImage !== " " && (
-                    <div className="flex justify-center">
-                      <a
-                        className="pt-[5%] w-[30%]"
-                        href={article[selectedIndex].articleLink}
-                        target="_blank"
-                      >
-                        <img
-                          src={article[selectedIndex].articleImage}
-                          alt="第二十五屆赤弦獎吾聲主視覺-臺北科技大學采音吉他社主辦民歌比賽"
-                        />
-                      </a>
+                    <div>
+                      <div className="flex justify-center">
+                        <a
+                          className="pt-[5%] w-[30%]"
+                          href={article[selectedIndex].articleLink}
+                          target="_blank"
+                        >
+                          <img
+                            src={article[selectedIndex].articleImage}
+                            alt="第二十五屆赤弦獎吾聲主視覺-臺北科技大學采音吉他社主辦民歌比賽"
+                          />
+                        </a>
+                      </div>
+                      <p className="large_text text-center pt-[2%] max-md:text-lg">
+                        {article[selectedIndex].imageTitle}
+                      </p>
                     </div>
                   )}
                 </div>
