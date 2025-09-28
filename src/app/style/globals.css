@@ -32,6 +32,10 @@
     @apply text-Cus_Red text-[2rem] font-bold tracking-[5px];
   }
 
+  .interview_title {
+    @apply big_title text-[1.5rem] -ml-4 mb-[1.5%];
+  }
+
   .home_custom_title {
     @apply base_text text-4xl font-bold tracking-[20px] [writing-mode:vertical-lr] max-m_md:tracking-[15px] max-m_md:text-2xl;
   }
