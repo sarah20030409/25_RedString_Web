@@ -7,6 +7,7 @@ import contentJson from "./components/content.json";
 export default function Interview() {
   const [selectedArticle, setSelectedArticle] = useState("ARTICLE01");
   const articlesRef = useRef<HTMLDivElement>(null);
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const content = contentJson as any;
 
   const handleImageClick = (articleKey: string) => {

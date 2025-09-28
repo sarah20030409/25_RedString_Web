@@ -5,6 +5,7 @@ interface ArticlesProps {
 }
 
 export default function Articles({ articleNum }: ArticlesProps) {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const content = contentJson as any;
   const articleData = content[articleNum];
 
