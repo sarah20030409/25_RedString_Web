@@ -35,8 +35,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: "https://redstringaward.it.com/Logo.png",
-        width: 1200,
-        height: 1200,
+        width: 562,
+        height: 562,
         alt: "紅樓赤弦獎-吾聲",
       },
     ],
