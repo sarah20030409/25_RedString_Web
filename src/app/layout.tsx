@@ -8,7 +8,7 @@ import "./style/globals.css";
 import Cursor from "./globals/Cursor.component";
 
 export const metadata: Metadata = {
-  title: "第二十五屆紅樓赤弦獎-吾聲",
+  title: "赤弦獎-吾聲",
   description: "第二十五屆紅樓赤弦獎-吾聲，主辦單位:國立臺北科技大學采音吉他社",
   keywords: ["RedString", "赤弦獎", "采音吉他社", "臺北科技大學"],
   metadataBase: new URL("https://redstringaward.it.com/"),
