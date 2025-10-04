@@ -18,11 +18,12 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "any" },
-      { url: "/favicon.ico", sizes: "16x16" },
-      { url: "/favicon.ico", sizes: "32x32" },
+      { url: "/Logo.png", sizes: "16x16" },
+      { url: "/Logo.png", sizes: "32x32" },
+      { url: "/Logo.png", sizes: "64x64" },
     ],
     shortcut: "/favicon.ico",
-    apple: "/favicon.ico",
+    apple: "/Logo.png",
   },
 
   openGraph: {
@@ -33,9 +34,9 @@ export const metadata: Metadata = {
     siteName: "RedString Award",
     images: [
       {
-        url: "https://redstringaward.it.com/favicon.ico",
+        url: "https://redstringaward.it.com/Logo.png",
         width: 1200,
-        height: 630,
+        height: 1200,
         alt: "紅樓赤弦獎-吾聲",
       },
     ],
@@ -46,6 +47,14 @@ export const metadata: Metadata = {
   other: {
     "apple-mobile-web-app-capable": "yes",
     "apple-mobile-web-app-title": "赤弦獎",
+    // 添加結構化資料
+    "application/ld+json": JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      name: "紅樓赤弦獎-吾聲",
+      url: "https://redstringaward.it.com/",
+      logo: "https://redstringaward.it.com/Logo.png",
+    }),
   },
 };
 
